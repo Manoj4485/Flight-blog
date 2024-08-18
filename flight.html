@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Flight Booking Blog</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5; /* Light gray background color */
+            color: #333; /* Darker text color for better readability */
+            padding-bottom: 60px; /* Ensure content does not hide behind the footer */
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header Styles */
+        header {
+            background-color: #00796b; /* Teal background color */
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px;
+            border-bottom: 4px solid #004d40; /* Darker teal border */
+        }
+
+        header .logo {
+            display: flex;
+            align-items: center;
+        }
+
+        header .logo img {
+            height: 80px;
+            width: 80px;
+            margin-right: 15px;
+        }
+
+        header h1 {
+            font-family: 'Lucida', cursive;
+            font-size: 36px;
+            margin-left: 15px;
+        }
+
+        header nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            align-items: center;
+        }
+
+        header nav ul li {
+            margin-right: 25px;
+        }
+
+        header nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        header nav ul li a img {
+            height: 24px;
+        }
+
+        /* Main Section Styles */
+        main {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px 0;
+        }
+
+        /* Latest Offers (Left Side) Styles */
+        .recent-offers {
+            width: 25%;
+            margin-right: 10px;
+        }
+
+        .recent-offers h2 {
+            border-left: 5px solid #ffab91; /* Light peach color */
+            padding-left: 10px;
+            font-size: 30px;
+            margin-bottom: 15px;
+            font-family: 'Georgia', serif;
+        }
+
+        .recent-offers ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .recent-offers ul li {
+            margin-bottom: 15px;
+        }
+
+        .recent-offers ul li a {
+            text-decoration: none;
+            color: #e57373; /* Light red */
+            font-weight: bold;
+            font-size: 24px;
+            line-height: 1.5;
+            transition: color 0.3s;
+        }
+
+        .recent-offers ul li a:hover {
+            color: #ff8a80; /* Slightly darker red for hover effect */
+        }
+
+        /* Featured Flights (Right Side) Styles */
+        .featured-flights {
+            width: 70%;
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .featured-flights .flight {
+            width: 32%;
+            margin-bottom: 10px;
+            background-color: #ffffff; /* White background for flights */
+            padding: 15px;
+            border: 1px solid #ddd; /* Light gray border */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        .featured-flights .flight img {
+            width: 100%;
+            height: 300px;
+            display: block;
+            margin-bottom: 10px;
+            border-radius: 8px;
+            object-fit: cover; /* Ensure images cover the area without distortion */
+        }
+
+        .featured-flights .flight h3 {
+            font-size: 18px;
+            margin-bottom: 8px;
+            font-family: 'Georgia', serif;
+            color: #00796b; /* Teal color for headings */
+        }
+
+        .featured-flights .flight p {
+            font-size: 14px;
+            color: #777;
+        }
+
+        /* Footer Styles */
+        footer {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            background: #00796b; /* Teal background color */
+            padding: 15px 0;
+            text-align: center;
+            font-family: 'Poppins', sans-serif;
+            z-index: 999;
+        }
+
+        footer .text span {
+            font-size: 17px;
+            font-weight: 400;
+            color: white;
+        }
+
+        footer .text span a {
+            font-weight: 500;
+            color: white;
+        }
+
+        footer .text span a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="https://www.informalnewz.com/wp-content/uploads/2023/10/Air-Ticket-Offer.jpg" alt="Flight Booking Blog Logo">
+                <h1>Manoj's Flights</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#recent-offers">Latest Offers</a></li>
+                    <li><a href="#featured-flights">Featured Flights</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="recent-offers" class="recent-offers">
+            <h2>Latest Flight Offers</h2>
+            <ul>
+                <li><a href="https://www.in.cheapflights.com/flights-to-France/?sck=SEM&skipapp=true&gclid=Cj0KCQjwt4a2BhD6ARIsALgH7Dp4IRwDM56CVk7qphir6veDcAasv104xI_nB-K4CVy40-0TDqpehK8aApYNEALw_wcB">Special Deal to Paris</a></li>
+                <li><a href="https://www.finnair.com/us-en/destinations/asia-pacific/india/delhi?gad_source=1&gclid=Cj0KCQjwt4a2BhD6ARIsALgH7Dp_kYeb2mK5u59yrLsAiIs_E3VGKn4CHboihZ0ZEPCOyBPH-uuT5EAaAs59EALw_wcB&gclsrc=aw.ds">Discounted Tickets to New York</a></li>
+                <li><a href="https://www.save70.com/frp/?campaignid=21035560764&adgroupid=156425351502&lb=skys&gad_source=1&gclid=Cj0KCQjwt4a2BhD6ARIsALgH7DpHS34UHaUvhlr8MSMU5fH1cfTV5GPWZmnPWn0MCcuG-OVng43kxnEaAhRIEALw_wcB">Limited Time Offer to Tokyo</a></li>
+            </ul>
+        </section>
+        
+        <section id="featured-flights" class="featured-flights">
+            <div class="flight">
+                <img src="https://i.etsystatic.com/14059961/r/il/2d4c6d/1876569276/il_570xN.1876569276_b1cy.jpg" alt="Featured Flight 1">
+                <h3>Special Deal to Paris</h3>
+                <h3><a href="https://www.in.cheapflights.com/flights-to-France/?sck=SEM&skipapp=true&gclid=Cj0KCQjwt4a2BhD6ARIsALgH7Dp4IRwDM56CVk7qphir6veDcAasv104xI_nB-K4CVy40-0TDqpehK8aApYNEALw_wcB">Book Now</a></h3>
+            </div>
+            <div class="flight">
+                <img src="https://blogbox.indianeagle.com/wp-content/uploads/2018/12/Air-India-nonstop-New-York-JFK-to-Mumbai-flights.jpg" alt="Featured Flight 2">
+                <h3>Discounted Tickets to New York</h3>
+                <h3><a href="https://www.finnair.com/us-en/destinations/asia-pacific/india/delhi?gad_source=1&gclid=Cj0KCQjwt4a2BhD6ARIsALgH7Dp_kYeb2mK5u59yrLsAiIs_E3VGKn4CHboihZ0ZEPCOyBPH-uuT5EAaAs59EALw_wcB&gclsrc=aw.ds">Book Now</a></h3>
+            </div>
+            <div class="flight">
+                <img src="https://www.momondo.in/rimg/dimg/ca/7e/9ae1c4b2-city-21033-16374d0645f.jpg?width=1366&height=768&xhint=1356&yhint=1250&crop=true" alt="Featured Flight 3">
+                <h3>Limited Time Offer to Tokyo</h3>
+                <h3><a href="https://www.save70.com/frp/?campaignid=21035560764&adgroupid=156425351502&lb=skys&gad_source=1&gclid=Cj0KCQjwt4a2BhD6ARIsALgH7DpHS34UHaUvhlr8MSMU5fH1cfTV5GPWZmnPWn0MCcuG-OVng43kxnEaAhRIEALw_wcB">Book Now</a></h3>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="text">
+            <span>Created By <a href="#">Manoj</a> | &#169; All Rights Reserved</span>
+        </div>
+    </footer>
+</body>
+</html>
